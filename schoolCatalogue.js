@@ -1,3 +1,7 @@
+//Classes practice
+
+
+// Parrent class
 class School {
     constructor (name,level,numberOfStudents) {
       this._name = name;
@@ -30,7 +34,7 @@ class School {
   }
   }
   
-  
+  //Child class - Primary School
   
   class PrimarySchool extends School {
     constructor(name,numberOfStudents,pickupPolicy){
@@ -43,6 +47,8 @@ class School {
     }
   }
   
+// HighSchool child class
+
   class HighSchool extends School {
     constructor(name,numberOfStudents,sportsTeams){
       super(name,'High',numberOfStudents)
@@ -53,6 +59,9 @@ class School {
     }
   }
   
+
+  // New instances
+
   const lorraineHansbury = new PrimarySchool('Lorraine Hansbury',514,'Students must be picked up by a parent, guardian, or a family member over the age of 13.')
   
   lorraineHansbury.quickFacts()
